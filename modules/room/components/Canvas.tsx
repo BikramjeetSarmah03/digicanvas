@@ -4,9 +4,9 @@ import { useKeyPressEvent } from "react-use";
 
 import { useViewportSize } from "@/common/hooks/useViewportSize";
 import { CANVAS_SIZE } from "@/common/constants/canvasSize";
-import { useDraw } from "@/modules/canvas/hooks/canvas.hooks";
+import { useDraw } from "@/modules/room/hooks/canvas.hooks";
 import { socket } from "@/common/lib/socket";
-import { drawFromSocket } from "@/modules/canvas/helpers/canvas.helpers";
+import { drawFromSocket } from "@/modules/room/helpers/canvas.helpers";
 import { CtxOptions } from "@/types";
 
 import Minimap from "./Minimap";
