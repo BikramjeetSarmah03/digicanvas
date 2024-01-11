@@ -92,12 +92,12 @@ export default function Canvas() {
   }, [isDrawing, ctx]);
 
   return (
-    <div className="h-full w-full overflow-hidden">
+    <div className="h-full w-full overflow-hidden bg-zinc-300">
       <motion.canvas
         ref={canvasRef}
         width={CANVAS_SIZE.width}
         height={CANVAS_SIZE.height}
-        className={`bg-zinc-300 ${dragging && "cursor-move"}`}
+        className={`${dragging && "cursor-move"}`}
         style={{ x, y }}
         drag={dragging}
         dragConstraints={{
